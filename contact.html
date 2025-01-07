@@ -1,0 +1,111 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Contact TeenSpire - Let us know how we can help.">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | TeenSpire</title>
+  <link rel="stylesheet" href="theme.css">
+</head>
+<body>
+  <header>
+    <button class="dark-mode-toggle">Dark Mode</button>
+    <h1>TeenSpire</h1>
+    <p>Empowering Teenagers to Explore, Learn, and Thrive</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="index.html#features">Features</a>
+    <div class="dropdown">
+      <span>Opportunities</span>
+      <div class="dropdown-content">
+        <a href="index.html#internships">Internships</a>
+        <a href="index.html#competitions">Competitions</a>
+        <a href="index.html#community">Community Involvement</a>
+        <a href="index.html#freelancing">Freelancing</a>
+      </div>
+    </div>
+    <a href="contact.html" class="active-link">Contact</a>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <h2>Contact Us</h2>
+      <p>Questions or feedback? Fill out the form below and let us know how we can help.</p>
+      <a href="#contact-section" class="cta-link">Reach Out</a>
+    </div>
+  </section>
+
+  <div class="container" id="contact-section">
+    <section class="section contact-section">
+      <h2>We’d Love to Hear from You</h2>
+      <!-- 
+        ACTION NOTE:
+        Replace the example Formspree action URL below with your own endpoint
+        or server-side script. 
+        For example, sign up at https://formspree.io/ to get your unique form URL.
+      -->
+      <form 
+        class="contact-form" 
+        action="https://formspree.io/f/myzzbako" 
+        method="POST"
+      >
+        <div class="form-group">
+          <label for="user-name">Name:</label>
+          <input 
+            type="text" 
+            id="user-name" 
+            name="name" 
+            placeholder="Enter your name" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-email">Email:</label>
+          <input 
+            type="email" 
+            id="user-email" 
+            name="email" 
+            placeholder="Enter your email" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-subject">Subject:</label>
+          <input 
+            type="text" 
+            id="user-subject" 
+            name="subject" 
+            placeholder="Enter message subject" 
+            required 
+          />
+        </div>
+        <div class="form-group">
+          <label for="user-message">Message:</label>
+          <textarea 
+            id="user-message" 
+            name="message" 
+            rows="5" 
+            placeholder="Your message..." 
+            required
+          ></textarea>
+        </div>
+        <!-- Simple spam prevention (if not using a dedicated service) -->
+        <input type="hidden" name="_gotcha" style="display:none" />
+        
+        <button type="submit" class="cta-button">Send Message</button>
+      </form>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TeenSpire | Empowering Teenagers Everywhere</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
